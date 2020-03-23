@@ -1,0 +1,118 @@
+.tabla1{
+width: 100%;
+padding: 0;
+margin: 5px 0 0 0;
+font: 11px Verdana, Arial;
+}
+
+.tabla1 caption {
+margin: 5px 0 0 0;
+padding: 0 0 5px 0;
+width: 100%;	 
+font: italic 12px Verdana, Arial, Helvetica, sans-serif;
+text-align: center;
+}
+
+.tabla1 th{
+font: bold 11px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+color: #4f6b72;
+border-right: 1px solid #C1DAD7;
+border-bottom: 1px solid #C1DAD7;
+border-top: 1px solid #C1DAD7;
+letter-spacing: 2px;
+text-transform: uppercase;
+text-align: center;
+padding: 4px 4px 4px 8px;
+background: #CAE8EA;
+}
+
+.tabla1 td {
+border-right: 1px solid #C1DAD7;
+border-bottom: 1px solid #C1DAD7;
+background: #fff;
+padding: 4px 4px 4px 4px;
+color: #4f6b72;
+}
+
+.tabla1 a {
+font-weight:bold;
+text-decoration:none;
+color:#003399;
+}
+
+.tabla1 a:hover {
+font-weight:bold;
+text-decoration:underline;
+}
+
+
+.tabla1 td:hover {
+background: #F5FAFA;
+color: #797268;
+}
+
+.tabla2 {
+width: 100%;
+padding: 0;
+margin: 1px 0 0 0;
+font: 11px Verdana, Arial;
+}
+
+.tabla2 a {
+font-weight:bold;
+text-decoration:none;
+color:#003399;
+}
+
+.tabla2 a:hover {
+font-weight:bold;
+text-decoration:underline;
+}
+
+.tabla3{
+width: 100%;
+padding: 0;
+margin: 5px 0 0 0;
+font: 11px Verdana, Arial;
+}
+
+.naranja {
+background-color:#FF9900;
+}
+
+.colorfondo {
+background-color:#EEEEEE;
+}
+
+.tabla3 th{
+padding: 3px 3px 3px 3px;
+background-color:#CCCCCC;
+border-bottom: 2px solid #333333;
+}
+
+.tabla3 td{
+padding: 2px;
+}
+
+.headerhoriz {
+padding: 3px 3px 3px 3px;
+background-color:#CCCCCC;
+border-right: 2px solid #333333;
+text-align: center;
+font-weight:bold;
+}
+
+.headercentro {
+padding: 3px 3px 3px 3px;
+background-color:#CCCCCC;
+text-align: center;
+font-weight:bold;
+}
+
+.tabla3 caption {
+margin: 5px 0 0 0;
+padding: 0 0 5px 0;
+width: 100%;	 
+font: bold 14px Helvetica, Verdana, Arial, sans-serif;
+text-align: center;
+}

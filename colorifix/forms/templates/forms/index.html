@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<div id="cuerpo" class="column last span-15">
+    <div id="contenido" class="column last span-6">
+        <div class="column span-6">
+            <div class="caja">
+                <div class="cajatitle"><div class="textotitle">Available Actions</div></div>
+                <div class="cajacontenido">
+                    <form name="actions" method="post" action="{% url 'forms:index' %}" class="logs">{% csrf_token %}
+                        <table class='tabla3' style='position:relative; z-index:1;' cellspacing='0' cellpadding='0'>
+                            <tr> 
+                                <td class="left"><select name="options">{% for form in all_forms %}<option value="{{ form.unique_id }}" {% if selected_form.unique_id == form.unique_id %} selected {% endif %}>{{ form }}</option>{% endfor %}</select></td>
+                            </tr>    
+                            <tr>    
+                                <td class="left"><input type="submit" name="open_form" value="Submit"></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% if selected_form is not None %}
+    <div id="contenido" class="column last span-9">
+        <div class="column span-9">
+            <div class="caja">
+                <div class="cajatitle"><div class="textotitle">{{ selected_form.label }}</div></div>
+                <div class="cajacontenido">
+                    <form name="actions" method="post" action="{% url 'forms:save_form' selected_form.unique_id %}" class="logs">{% csrf_token %}
+                        <table class="tabla3" style="position:relative; z-index:1;" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td class="center">{{ selected_form.description }}</td>
+                            </tr>
+                            {% for element in selected_form.parameters %}
+                            <tr>
+                                <td class="headerhoriz">{{ element.label }}:</td>
+                                {% if element.param_type == 'number' %}
+                                <td class="right"><input type="number" name="{{element.name}}"></td>
+                                {% elif element.param_type == 'string' %}
+                                <td class="right"><input type="text" name="{{element.name}}"></td>
+                                {% elif element.param_type == 'bool' %}
+                                <td class="right"><input type="checkbox" name="{{element.name}}" value="{{element.name}}"></td>
+                                {% elif element.param_type == 'select' %}
+                                <td class="right"><select name="{{element.name}}">{% for option in element.options %}<option value="{{ option.unique_id }}">{{ option.name }}</option>{% endfor %}</select></td>
+                                {% endif %}
+                            </tr>
+                            {% endfor %}
+                            <tr>    
+                                <td class="left"><input type="submit" name="save_form" value="Save"></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}

@@ -1,0 +1,86 @@
+div.menu_item
+{
+	font-family:Tahoma, Verdana, Arial;
+	padding:3px 5px 0px 5px;
+/*	background-image:url(../images/icons/buttons/2b.gif);*/
+	background-repeat:repeat-x;
+	text-align:left;
+	float:left;
+	height:20px;
+}
+
+#menu .menu_item a
+{
+	font-family:Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	text-decoration:none;
+	color:#000000;
+}
+
+.menu_separator
+{
+	float:left;
+	width:1px;
+	height:20px;
+	background-image:url(../images/separator.gif);
+}
+
+.menu_hide
+{
+	float: left;
+	display:none;
+}
+
+.menu_show
+{
+
+} 
+
+.hora {
+font-family:Tahoma, Verdana, Arial, Helvetica, sans-serif;
+font-size:11px;
+color:#222277;
+}
+
+div#navigation
+{
+	background-image:url(../images/table_top_back_middle.gif);
+/*	background-image:url(../images/backgrounds/navigation.gif);*/
+	background-repeat:repeat-x;
+	background-color:#FFFFFF;
+	width:100% !important; 
+	padding:0px;
+	height:26px;
+}
+
+div#menu
+{
+	padding:0px;
+	padding-bottom:1px;
+	width:500px;
+	clear:both;
+	float:left;
+	height:20px;
+	margin:3px 0px 0px 0px;
+}
+
+div#quick_links
+{
+	padding:3px;
+	width:440px;
+	float:right;
+	text-align:right;
+	font-family:Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+}
+
+div#quick_links div#icons
+{
+	float:right;
+}
+
+#theme {
+	background-image:url(../images/barra2.png);
+	height:15px; 
+	border-top:1px solid #999999;
+}

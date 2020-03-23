@@ -1,0 +1,38 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'forms/caja.css' %}?{% now 'U' %}"" />
+<link rel="stylesheet" type="text/css" href="{% static 'forms/general.css' %}?{% now 'U' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'forms/grid.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'forms/menulat.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'forms/niftyCorners.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'forms/table.css' %}" />
+<script type="text/javascript" src="forms/nifty.js"></script>
+<script type="text/javascript" src="forms/numberformat.js"></script>
+
+<div class="container" style="background-color:#FAFAFA;">
+    <div id="title" class="column last span-15" ></div>
+    <div id="opciones" class="column last span-15">
+        <div id="navigation">
+            <div id="menu">
+                <div class="menu_item"><a href="{% url 'forms:index' %}">Home</a></div>
+            </div>
+        </div>
+        <div id="theme">&nbsp;</div>
+    </div>
+    {% block content %}
+    {% endblock %}
+</div>
+<div id="pie" class="column last span-15">
+</div>
+<script type="text/javascript">
+window.onload=function(){
+
+if(!NiftyCheck())
+return;
+RoundedTop("div.cajatitle","#FAFAFA","#008200","small");
+RoundedBottom("div.caja","#FAFAFA","#EEEEEE","small");
+Rounded("div.opciones","#FAFAFA","#999999","small");
+RoundedTop("div.cabeceraazul","#FAFAFA","#000082","small");
+RoundedBottom("div.cabeceraazul","#FAFAFA","#00005F","small");
+}
+</script>

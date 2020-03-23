@@ -1,0 +1,224 @@
+body {
+background: #F7F7F7;
+background-image:url(../images/EstadioVacio.gif);
+}
+
+a img {
+border: 0px solid #FFFFFF;
+}
+
+.a {
+font-weight:bold;
+text-decoration:none;
+color:#003399;
+}
+
+.a:hover {
+font-weight:bold;
+text-decoration:underline;
+}
+
+p a {
+font-weight:bold;
+text-decoration:none;
+color:#003399;
+}
+
+p a:hover {
+font-weight:bold;
+text-decoration:underline;
+}
+
+.formopciones {
+position:relative;
+width:100%;
+margin: 0px 0px 0px 0px;
+padding: 3px 5px 3px 5px;
+}
+
+.formventana {
+margin: 0px 0px 0px 0px;
+padding: 0px 0px 0px 0px;
+}
+
+label {
+position:relative;
+color: #115511;
+width:35%;
+text-align:left;
+padding: 0 5px 0 5px;
+font-weight:bold;
+}
+
+select {
+position:relative;
+}
+
+#title{
+height:70px;
+background-color:#227722;
+color:#FFFFFF;
+font:35px Arial;
+}
+
+.leyenda{
+font: 10px Verdana, Arial, Helvetica, sans-serif;
+}
+
+.guiaforo{
+font: 12px bold Verdana, Arial, Helvetica, sans-serif;
+}
+
+.texto{
+font: 12px Verdana, Arial, Helvetica, sans-serif;
+}
+
+#anuncio{
+margin: 10px 0 10px 151px;
+height: 60px;
+width:468px;
+background-color:#DDDDDD;
+}
+
+.quote{
+padding: 10px;
+margin: 3px;
+background-color:#DDDDAA;
+border-style:solid;
+border-width:1px;
+border-color:#FFFFFF;
+}
+
+.quotenombre{
+padding: 2px 0px 2px 15px;
+font-weight: bold;
+font-size: 10px;
+}
+
+.encabezamientopost{
+background-color:#DDDDDD;
+padding: 2px;
+margin: 0px;
+}
+
+.error {
+position:relative;
+width:98%;
+margin:5px auto;
+background: #FDD1C5;
+border-top: 2px solid #FBAB95;
+border-bottom: 2px solid #FBAB95;
+}
+
+.textoerror {
+color:#000000;
+text-align:left;
+font:14px Verdana;
+padding: 2px 0px 4px 20px;
+}
+
+.cabeceraazul {
+position:relative;
+width:98%;
+margin:2px auto;
+font:12px Verdana;
+line-height:25px;
+background:url(titulograndeazul.png) repeat-x;
+}
+
+.textocabecera {
+color:#FFFFFF;
+text-align:left;
+font:20px Verdana;
+padding: 0px 0px 2px 20px;
+}
+
+.boton {
+background-color:66FFFF;
+border: 1px solid #000000;
+cursor:pointer;
+width:90px;
+padding: 2px 3px 2px 3px;
+font-weight:bold;
+}
+
+.boton120 {
+background-color:66FFFF;
+border: 1px solid #000000;
+cursor:pointer;
+width:120px;
+padding: 2px 3px 2px 3px;
+font-weight:bold;
+}
+
+#marcadorflash{
+margin: 5px 0 5px 35px;
+height: 100px;
+width:700px;
+background-color:#DDDDDD;
+}
+
+#tactica{
+margin: 5px 0 5px 35px;
+height: 529px;
+width:375px;
+background-color:#DDDDDD;
+}
+
+.centered{
+text-align:center;
+}
+
+.left{
+text-align:left;
+}
+
+.right{
+text-align:right;
+}
+
+.justified {
+text-align:justify;
+}
+
+.bold{
+font-weight:bold;
+}
+
+.backgverde {
+background-color:#00FF66;
+}
+
+.backgrojo {
+background-color:#FF3333;
+}
+
+.azuloscuro {
+color:#000066;
+}
+
+.verde {
+color:#009900;
+}
+
+.rojo {
+color:#FF0000;
+}
+
+.clear{
+clear:both;
+}
+
+.opciones {
+	width:100%;
+	background-color:#999999;
+}
+
+.margin10left {
+margin: 0px 0px 0px 10px;
+}
+
+.textolargo {
+text-align:justify;
+margin-bottom:9px;
+}

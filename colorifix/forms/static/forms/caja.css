@@ -1,0 +1,67 @@
+.intentocaja {
+position:relative;
+width:98%;
+margin:5px auto;
+font:12px Verdana;
+line-height:15px;
+border: 1px solid #333333;
+background-color:#EEEEEE;
+}
+
+.intentocajatitle {
+width:100%;
+background:#227722 no-repeat left top;
+position:relative;
+background:url(tituloverde.png) repeat-x;
+}
+
+.textotitle {
+color:#FFFFFF;
+text-align:left;
+font:14px Verdana;
+font-weight:bold;
+padding: 0px 0px 2px 20px;
+}
+
+.textotitleindice {
+color:#FFFFFF;
+text-align:left;
+font:12px Verdana;
+font-weight:bold;
+padding: 0px 0px 2px 15px;
+}
+
+.intentocajacontenido {
+padding:5px 10px 5px 10px;
+}
+
+.caja {
+position:relative;
+width:98%;
+margin:5px auto;
+font:12px Verdana;
+line-height:15px;
+background-color:#EEEEEE;
+}
+
+.cajatitle {
+width:100%;
+background:#227722 no-repeat left top;
+position:relative;
+background:url(tituloverde.png) repeat-x;
+}
+
+.cajacontenido {
+padding:3px 5px 5px 5px;
+}
+
+.caja a {
+font-weight:bold;
+text-decoration:none;
+color:#003399;
+}
+
+.caja a:hover {
+font-weight:bold;
+text-decoration:underline;
+}
